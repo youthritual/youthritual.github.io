@@ -16,7 +16,7 @@ html, body {
     animation: fadeIn 10s ease forwards; 
   }
   
-  .container {
+  .container{
     position: relative;
     width: 400px;
     height: 400px;
@@ -80,12 +80,12 @@ html, body {
 }
 
 .container h1:hover::before {
-    opacity: 1; /* Show additional content on hover */
+    opacity: 1; 
 }
 
-.container h1::before {
-    transition: opacity 0.3s ease-in-out; /* Transition for appearing and disappearing */
-}
+/* .container h1::before {
+    transition: opacity 0.3s ease-in-out;
+} */
   
 @keyframes rotateCircle1 {
     0% {
@@ -120,6 +120,14 @@ html, body {
     }
 }
 
+@keyframes dimBG {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.25;
+    }
+}
 
     
     
